@@ -6,7 +6,7 @@ def medianOdd(imageList):
     return sortedValues[middleIndex]
 
 picturesList=[]
-folder=("image/")
+folder=("images/")
 
 #add all images to an array img 
 img=Image.open("image/1.png")
@@ -27,35 +27,27 @@ img=Image.open("image/8.png")
 picturesList.append(img)
 img=Image.open("image/9.png")
 picturesList.append(img)
-
-#get the size of the images
 picW,picH=picturesList[0].size
-size=(picW,picH)
-#create lists for pixel values
 redList=[]
-greenList=[]
 blueList=[]
-#create blank image
-newImg=Image.new("RGB",size)
+greenList=[]
+f
 
-#its loop time
-for i in range(0,picW):
-    for j in range(0,picH):
-        for k in range(0,9):
-            
-           temp =picturesList[k].getpixel((i,j))
-           redList.append(temp[0])
-           greenList.append(temp[1])
-           blueList.append(temp[2])
-           
-        newr=medianOdd(redList)
-        newg=medianOdd(greenList)
-        newb=medianOdd(blueList)
-        
-        newImg.putpixel((i,j),(newr,newg,newb))
-           
-        del redList[:]
-        del greenList[:]
-        del blueList[:]
-#make new image and save       
-newImg.save('Filtered.png')            
+
+
+
+
+
+    
+    
+
+
+    
+    
+
+ 
+
+
+
+
+
